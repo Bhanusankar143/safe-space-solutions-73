@@ -512,6 +512,48 @@ const ServiceDetail = () => {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Service Gallery */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Our Work Gallery</CardTitle>
+                <CardDescription>
+                  See examples of our {service.title.toLowerCase()} installations
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img 
+                      src={service.image} 
+                      alt={`${service.title} Example 1`}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img 
+                      src="/lovable-uploads/386454ba-6678-4ed0-a68c-a68f9b9ff473.png" 
+                      alt={`${service.title} Example 2`}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img 
+                      src="/lovable-uploads/4e66d21e-824d-4596-8c92-72e9cdda7b4a.png" 
+                      alt={`${service.title} Example 3`}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img 
+                      src="/lovable-uploads/6d04dda3-1c0a-4277-9e31-26980088fe0c.png" 
+                      alt={`${service.title} Example 4`}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Sidebar */}

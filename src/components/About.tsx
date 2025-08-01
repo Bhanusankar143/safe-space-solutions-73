@@ -84,6 +84,43 @@ const About = () => {
               </div>
             </div>
           </div>
+
+          {/* Mini Gallery in About */}
+          <div className="mt-16 text-center">
+            <h3 className="text-2xl font-bold text-foreground mb-8">
+              Our <span className="text-primary">Work Samples</span>
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <img 
+                  src="/lovable-uploads/386454ba-6678-4ed0-a68c-a68f9b9ff473.png" 
+                  alt="Balcony Safety Net" 
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <img 
+                  src="/lovable-uploads/4e10a8f3-07c2-477f-834a-ac76376a19d5.png" 
+                  alt="Invisible Grills" 
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <img 
+                  src="/lovable-uploads/6d04dda3-1c0a-4277-9e31-26980088fe0c.png" 
+                  alt="Children Safety Net" 
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <img 
+                  src="/lovable-uploads/a103c497-2e04-40f7-83f7-e409ee3843bb.png" 
+                  alt="Anti Bird Net" 
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>;

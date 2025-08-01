@@ -43,12 +43,12 @@ const Header = () => {
   };
 
   const handleCall = () => {
-    window.location.href = 'tel:+917205870062';
+    window.location.href = 'tel:+917606914368';
   };
 
   const handleWhatsApp = () => {
     const message = "Hi! I'm interested in your safety net services. Could you please provide more information?";
-    const whatsappUrl = `https://wa.me/917205870062?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/917606914368?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -64,8 +64,8 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-3 cursor-pointer" onClick={() => navigate('/')}>
               <img 
-                src="/lovable-uploads/56945522-73a1-43ff-9574-df24370328b2.png" 
-                alt="Jaidev Safety Nets Logo" 
+                src="/lovable-uploads/e4b4ae4c-bcb6-4bd6-9902-812ef421b989.png" 
+                alt="G. Kiran Safety Nets Logo" 
                 className="h-10 w-auto"
               />
             </div>
@@ -131,11 +131,11 @@ const Header = () => {
           <div className="hidden xl:flex items-center space-x-4 text-sm">
             <div className="flex items-center space-x-1">
               <Phone className="h-4 w-4 text-primary" />
-              <span>7205870062</span>
+              <span>76069 14368</span>
             </div>
             <div className="flex items-center space-x-1">
               <Mail className="h-4 w-4 text-primary" />
-              <span>mallinagesh853@gmail.com</span>
+              <span>gkiransafetynets@gmail.com</span>
             </div>
           </div>
             
@@ -183,11 +183,11 @@ const Header = () => {
               <div className="pt-4 border-t space-y-4">
                 <div className="flex items-center space-x-2 text-sm">
                   <Phone className="h-4 w-4 text-primary" />
-                  <span>7205870062</span>
+                  <span>76069 14368</span>
                 </div>
                 <div className="flex items-center space-x-2 text-sm">
                   <Mail className="h-4 w-4 text-primary" />
-                  <span>mallinagesh853@gmail.com</span>
+                  <span>gkiransafetynets@gmail.com</span>
                 </div>
               </div>
             </nav>

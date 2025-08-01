@@ -4,12 +4,12 @@ import { Button } from '@/components/ui/button';
 
 const FloatingButtons = () => {
   const handleCall = () => {
-    window.location.href = 'tel:+917205870062';
+    window.location.href = 'tel:+917606914368';
   };
 
   const handleWhatsApp = () => {
     const message = "Hi! I'm interested in your safety net services. Could you please provide more information?";
-    const whatsappUrl = `https://wa.me/917205870062?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/917606914368?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 

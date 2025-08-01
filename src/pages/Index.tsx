@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
 import HeroCarousel from '@/components/HeroCarousel';
+import HeroGallery from '@/components/HeroGallery';
 import Statistics from '@/components/Statistics';
 import About from '@/components/About';
 import Services from '@/components/Services';
@@ -27,6 +28,7 @@ const Index = () => {
     <div className="min-h-screen bg-background font-sans">{/* Force rebuild */}
       <Header />
       <HeroCarousel />
+      <HeroGallery />
       <Statistics />
       <About />
       <Services />

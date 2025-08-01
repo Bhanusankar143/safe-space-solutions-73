@@ -15,8 +15,8 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-3 mb-6">
               <img 
-                src="/lovable-uploads/56945522-73a1-43ff-9574-df24370328b2.png" 
-                alt="Jaidev Safety Nets Logo" 
+                src="/lovable-uploads/e4b4ae4c-bcb6-4bd6-9902-812ef421b989.png" 
+                alt="G. Kiran Safety Nets Logo" 
                 className="h-12 w-auto"
               />
             </div>
@@ -97,20 +97,20 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                 <div className="text-sm text-gray-400">
-                  <p>Golap Resort, Flat-2751</p>
-                  <p>Nayapalli, Bhubaneswar</p>
-                  <p>Odisha 751012</p>
+                  <p>Karmanghat</p>
+                  <p>Hyderabad district, Telangana</p>
+                  <p>500079</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary" />
-                <span className="text-sm text-gray-400">+91 7205870062</span>
+                <span className="text-sm text-gray-400">+91 76069 14368</span>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary" />
-                <span className="text-sm text-gray-400">mallinagesh853@gmail.com</span>
+                <span className="text-sm text-gray-400">gkiransafetynets@gmail.com</span>
               </div>
             </div>
           </div>
@@ -119,7 +119,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 Jaidev Safety Nets. All rights reserved.
+              © 2024 G. Kiran Safety Nets. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
