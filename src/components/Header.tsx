@@ -101,6 +101,11 @@ const Header = () => {
               About
             </button>
             
+            {/* Gallery Button */}
+            <button onClick={() => scrollToSection('gallery')} className="text-foreground hover:text-primary transition-colors">
+              Gallery
+            </button>
+            
             {/* Services Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
@@ -158,6 +163,11 @@ const Header = () => {
               </button>
               <button onClick={() => scrollToSection('about')} className="text-left text-foreground hover:text-primary transition-colors">
                 About
+              </button>
+              
+              {/* Gallery Button for Mobile */}
+              <button onClick={() => scrollToSection('gallery')} className="text-left text-foreground hover:text-primary transition-colors">
+                Gallery
               </button>
               
               {/* Mobile Services Menu */}
