@@ -121,17 +121,17 @@ const ServicesCarousel = () => {
 
   const handleBookNow = (serviceTitle: string) => {
     const message = `Hi! I'm interested in ${serviceTitle}. Could you please provide more details and a quote?`;
-    const whatsappUrl = `https://wa.me/916281051109?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/917606914368?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
   const handleCall = () => {
-    window.location.href = 'tel:+916281051109';
+    window.location.href = 'tel:+917606914368';
   };
 
   const handleWhatsApp = (serviceTitle: string) => {
     const message = `Hi! I'm interested in ${serviceTitle}. Could you please provide more information?`;
-    const whatsappUrl = `https://wa.me/916281051109?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/917606914368?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 

@@ -105,7 +105,7 @@ const HeroCarousel = () => {
 
   const handleWhatsApp = (serviceTitle: string) => {
     const message = `Hi! I'm interested in ${serviceTitle}. Could you please provide more information?`;
-    const whatsappUrl = `https://wa.me/916281051109?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/917606914368?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 

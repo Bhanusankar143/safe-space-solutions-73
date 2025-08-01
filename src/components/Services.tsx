@@ -100,18 +100,18 @@ const Services = () => {
 
   const handleBookNow = (serviceName: string) => {
     const message = `Hi! I'm interested in ${serviceName}. Could you please provide more details and a quote?`;
-    const whatsappUrl = `https://wa.me/916281051109?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/917606914368?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
   const handleWhatsApp = (serviceName: string) => {
     const message = `Hi! I'm interested in ${serviceName}. Could you please provide more information?`;
-    const whatsappUrl = `https://wa.me/916281051109?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/917606914368?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
   const handleCall = () => {
-    window.location.href = 'tel:+916281051109';
+    window.location.href = 'tel:+917606914368';
   };
 
   const handleLearnMore = (slug: string) => {

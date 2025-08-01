@@ -22,7 +22,7 @@ Our balcony safety nets are made from high-quality materials that are:
 • Easy to clean and maintain
 • Custom-fitted for perfect installation
 
-We serve residential complexes, apartments, and individual homes across Bhubaneswar and surrounding areas. Our experienced team ensures quick and professional installation with minimal disruption to your daily routine.`,
+We serve residential complexes, apartments, and individual homes across Karmanghat, Hyderabad and surrounding areas. Our experienced team ensures quick and professional installation with minimal disruption to your daily routine.`,
     features: [
       "High-tensile strength materials",
       "Weather-resistant and UV-protected", 
@@ -410,12 +410,12 @@ const ServiceDetail = () => {
 
   const handleBookNow = () => {
     const message = `Hi! I'm interested in ${service.title}. Could you please provide more details and a quote?`;
-    const whatsappUrl = `https://wa.me/916281051109?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/917606914368?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
   const handleCall = () => {
-    window.location.href = 'tel:+916281051109';
+    window.location.href = 'tel:+917606914368';
   };
 
   const IconComponent = service.icon;
@@ -555,7 +555,7 @@ const ServiceDetail = () => {
                 <div className="pt-4 border-t text-sm text-muted-foreground space-y-2">
                   <div className="flex items-center space-x-2">
                     <Phone className="h-4 w-4" />
-                    <span>6281051109</span>
+                    <span>76069 14368</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <MessageCircle className="h-4 w-4" />
@@ -572,11 +572,11 @@ const ServiceDetail = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-2 text-sm text-muted-foreground">
-                  <p>• Bhubaneswar</p>
-                  <p>• Nayapalli</p>
-                  <p>• Khandagiri</p>
-                  <p>• Patia</p>
-                  <p>• Chandrasekharpur</p>
+                  <p>• Karmanghat</p>
+                  <p>• Hyderabad</p>
+                  <p>• Secunderabad</p>
+                  <p>• Dilsukhnagar</p>
+                  <p>• LB Nagar</p>
                   <p>• Surrounding areas</p>
                 </div>
               </CardContent>

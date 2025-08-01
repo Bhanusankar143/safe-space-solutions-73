@@ -5,9 +5,9 @@ const About = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              About <span className="text-primary">Bhanu Shankar Safety Nets</span>
+              About <span className="text-primary">G. Kiran Safety Nets</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Bhanu Shankar safety nets</p>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Professional safety net solutions in Karmanghat, Hyderabad</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -53,8 +53,9 @@ const About = () => {
                     <div>
                       <p className="font-medium text-foreground">Primary Location</p>
                       <p className="text-sm text-muted-foreground">
-                        Golap Resort, Flat-2751, Plot No-810, Behera Sahi Rd, 
-                        Near The World Mall, Nuasahi, Nayapalli, Bhubaneswar, Odisha 751012
+                        G. Kiran Safety Nets<br />
+                        Karmanghat, Hyderabad District<br />
+                        Telangana - 500079
                       </p>
                     </div>
                   </div>
@@ -62,9 +63,9 @@ const About = () => {
                   <div className="flex items-start space-x-3">
                     <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <p className="font-medium text-foreground">Additional Areas</p>
+                      <p className="font-medium text-foreground">Service Areas</p>
                       <p className="text-sm text-muted-foreground">
-                        Bhubaneswar Railway Station, Kurda Road, Cuttack City
+                        Hyderabad, Secunderabad, Karmanghat, Dilsukhnagar, LB Nagar and surrounding areas
                       </p>
                     </div>
                   </div>
@@ -72,11 +73,11 @@ const About = () => {
                   <div className="pt-4 border-t border-gray-200">
                     <div className="flex items-center space-x-3 mb-2">
                       <Phone className="h-4 w-4 text-primary" />
-                      <span className="text-sm font-medium">6281051109</span>
+                      <span className="text-sm font-medium">76069 14368</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <Mail className="h-4 w-4 text-primary" />
-                      <span className="text-sm">bhanugosala97@gmail.com</span>
+                      <span className="text-sm">gkiransafetynets@gmail.com</span>
                     </div>
                   </div>
                 </div>

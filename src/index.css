@@ -3,38 +3,53 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Safety-focused color scheme with professional blues and greens */
+/* Professional safety-focused color scheme with vibrant blues and oranges */
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 220 84% 4.9%;
+    --foreground: 222 84% 4.9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 84% 4.9%;
+    --card-foreground: 222 84% 4.9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 84% 4.9%;
+    --popover-foreground: 222 84% 4.9%;
 
-    --primary: 210 100% 50%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 210 100% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 210 100% 65%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 220 47.4% 11.2%;
+    --secondary: 210 100% 96%;
+    --secondary-foreground: 210 100% 25%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 142 76% 36%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 35 100% 55%;
+    --accent-foreground: 0 0% 100%;
+    --accent-glow: 35 100% 70%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 210 100% 50%;
+    --ring: 210 100% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-glow)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.9), hsl(var(--accent) / 0.8));
+
+    /* Shadows */
+    --shadow-primary: 0 10px 30px -10px hsl(var(--primary) / 0.3);
+    --shadow-accent: 0 10px 30px -10px hsl(var(--accent) / 0.3);
+    --shadow-elegant: 0 20px 40px -10px hsl(var(--primary) / 0.15);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -47,17 +62,18 @@
   }
 
   .dark {
-    --background: 220 84% 4.9%;
+    --background: 222 84% 4.9%;
     --foreground: 210 40% 98%;
 
-    --card: 220 84% 4.9%;
+    --card: 222 84% 6%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 220 84% 4.9%;
+    --popover: 222 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 100% 60%;
-    --primary-foreground: 220 47.4% 11.2%;
+    --primary: 210 100% 65%;
+    --primary-foreground: 222 47.4% 11.2%;
+    --primary-glow: 210 100% 75%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -65,15 +81,29 @@
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 142 76% 36%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 35 100% 65%;
+    --accent-foreground: 222 47.4% 11.2%;
+    --accent-glow: 35 100% 75%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --success: 142 76% 50%;
+    --success-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50.6%;
+    --destructive-foreground: 0 0% 100%;
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
+
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-glow)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.8), hsl(var(--accent) / 0.7));
+
+    /* Dark mode shadows */
+    --shadow-primary: 0 10px 30px -10px hsl(var(--primary) / 0.4);
+    --shadow-accent: 0 10px 30px -10px hsl(var(--accent) / 0.4);
+    --shadow-elegant: 0 20px 40px -10px hsl(var(--primary) / 0.2);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -142,6 +172,28 @@
   to { opacity: 0; }
 }
 
+@keyframes counter-up {
+  from { 
+    opacity: 0;
+    transform: translateY(20px) scale(0.8);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+    transform: scale(1);
+  }
+  50% { 
+    box-shadow: 0 0 30px hsl(var(--primary) / 0.5);
+    transform: scale(1.02);
+  }
+}
+
 .animate-fade-in-up {
   animation: fade-in-up 0.6s ease-out;
 }
@@ -164,6 +216,14 @@
 
 .animate-fade-out {
   animation: fade-out 0.5s ease-out forwards;
+}
+
+.animate-counter-up {
+  animation: counter-up 0.8s ease-out;
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
 }
 
 /* Floating buttons */

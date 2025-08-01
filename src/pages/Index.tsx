@@ -5,6 +5,7 @@ import HeroCarousel from '@/components/HeroCarousel';
 import Statistics from '@/components/Statistics';
 import About from '@/components/About';
 import Services from '@/components/Services';
+import Gallery from '@/components/Gallery';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
@@ -29,6 +30,7 @@ const Index = () => {
       <Statistics />
       <About />
       <Services />
+      <Gallery />
       <WhyChooseUs />
       <Contact />
       <Footer />

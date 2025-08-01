@@ -36,7 +36,7 @@ Email: ${formData.email}
 Service Interested: ${formData.service}
 Message: ${formData.message}`;
 
-    const whatsappUrl = `https://wa.me/917205870062?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/917606914368?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
     
     toast({
@@ -81,9 +81,9 @@ Message: ${formData.message}`;
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Our Location</h4>
                       <p className="text-muted-foreground text-sm leading-relaxed">
-                        Golap Resort, Flat-2751, Plot No-810, Behera Sahi Rd,<br />
-                        Near The World Mall, Nuasahi, Nayapalli,<br />
-                        Bhubaneswar, Odisha 751012
+                        G. Kiran Safety Nets<br />
+                        Karmanghat, Hyderabad District<br />
+                        Telangana - 500079
                       </p>
                     </div>
                   </div>
@@ -94,7 +94,7 @@ Message: ${formData.message}`;
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Phone Number</h4>
-                      <p className="text-muted-foreground">+91 7205870062</p>
+                      <p className="text-muted-foreground">+91 76069 14368</p>
                       <p className="text-sm text-muted-foreground">WhatsApp Available</p>
                     </div>
                   </div>
@@ -105,7 +105,7 @@ Message: ${formData.message}`;
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Email Address</h4>
-                      <p className="text-muted-foreground">mallinagesh853@gmail.com</p>
+                      <p className="text-muted-foreground">gkiransafetynets@gmail.com</p>
                     </div>
                   </div>
 
@@ -127,14 +127,14 @@ Message: ${formData.message}`;
                 <h4 className="font-semibold text-foreground mb-4">Find Us on Map</h4>
                 <div className="rounded-lg overflow-hidden shadow-lg">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.969267892389!2d85.81493731445617!3d20.28395008654774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19093e6ae52ee3%3A0x70b04c81e6b48b1e!2sNayapalli%2C%20Bhubaneswar%2C%20Odisha!5e0!3m2!1sen!2sin!4v1699123456789!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.6937276636595!2d78.55072731431!3d17.379718404705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb95a03bb5bb4f%3A0x5cf7c3a6e0a6c!2sKarmanghat%2C%20Hyderabad%2C%20Telangana%20500079!5e0!3m2!1sen!2sin!4v1699123456789!5m2!1sen!2sin"
                     width="100%"
                     height="250"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Bhanu Shankar Safety Nets Location"
+                    title="G. Kiran Safety Nets Location - Karmanghat, Hyderabad"
                   />
                 </div>
               </div>
