@@ -24,7 +24,7 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background font-sans">{/* Force rebuild */}
       <Header />
       <HeroCarousel />
       <Statistics />
