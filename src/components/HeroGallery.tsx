@@ -68,37 +68,40 @@ const HeroGallery = () => {
   const selectedImageData = galleryImages.find(img => img.id === selectedImage);
 
   return (
-    <section className="py-16 bg-gradient-to-br from-primary/5 to-secondary/5">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Our <span className="text-primary">Gallery</span>
+    <section className="py-20 section-modern bg-gradient-hero">
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Our Professional <span className="text-accent-light">Gallery</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Explore our professional safety net installations and quality work
+          <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            Explore our premium safety net installations and discover the quality that makes us 
+            Hyderabad's most trusted safety solution provider
           </p>
+          <div className="w-24 h-1 bg-accent mx-auto mt-6 rounded-full"></div>
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {galleryImages.map((image, index) => (
             <div
               key={image.id}
-              className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer animate-fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer card-hover floating-card"
+              style={{ animationDelay: `${index * 0.15}s` }}
               onClick={() => openModal(image.id)}
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
               </div>
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <h3 className="text-lg font-semibold">{image.title}</h3>
-                  <p className="text-sm mt-1">Click to view</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                  <h3 className="text-xl font-bold mb-2">{image.title}</h3>
+                  <p className="text-sm text-white/90 mb-3">Professional installation by G. Kiran Safety Nets</p>
+                  <div className="w-12 h-0.5 bg-accent rounded-full"></div>
                 </div>
               </div>
             </div>

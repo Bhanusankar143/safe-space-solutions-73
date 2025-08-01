@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -27,7 +30,9 @@ export default {
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))',
-					glow: 'hsl(var(--primary-glow))'
+					glow: 'hsl(var(--primary-glow))',
+					light: 'hsl(210 100% 85%)',
+					dark: 'hsl(210 100% 35%)'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -44,7 +49,8 @@ export default {
 				accent: {
 					DEFAULT: 'hsl(var(--accent))',
 					foreground: 'hsl(var(--accent-foreground))',
-					glow: 'hsl(var(--accent-glow))'
+					glow: 'hsl(var(--accent-glow))',
+					light: 'hsl(35 100% 85%)'
 				},
 				success: {
 					DEFAULT: 'hsl(var(--success))',

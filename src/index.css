@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -122,6 +123,47 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
+  /* Enhanced Typography */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  /* Professional Modern Components */
+  .section-modern {
+    @apply relative overflow-hidden;
+  }
+  
+  .section-modern::before {
+    content: '';
+    @apply absolute inset-0 opacity-5 pointer-events-none;
+    background: var(--gradient-primary);
+  }
+  
+  .card-modern {
+    @apply bg-white/90 backdrop-blur-sm border-0 shadow-lg hover:shadow-xl transition-all duration-300 rounded-2xl;
+    background: linear-gradient(145deg, rgba(255,255,255,0.95), rgba(255,255,255,0.8));
+  }
+  
+  .card-hover {
+    @apply transform hover:scale-105 hover:-translate-y-2 transition-all duration-500;
+  }
+  
+  .floating-card {
+    @apply shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-500 rounded-2xl;
+    background: linear-gradient(145deg, rgba(255,255,255,0.95), rgba(255,255,255,0.85));
+  }
+  
+  .nav-modern {
+    @apply bg-white/95 backdrop-blur-lg border-b border-border/20 shadow-sm;
+  }
+  
+  .btn-modern {
+    @apply px-8 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105;
   }
 }
 
