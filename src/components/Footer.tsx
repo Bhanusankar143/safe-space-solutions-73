@@ -127,6 +127,19 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
+        {/* ASK Solutions Credit */}
+        <div className="border-t border-gray-800 mt-6 pt-6 text-center">
+          <p className="text-gray-400 text-sm">
+            All Rights Reserved. Designed by{' '}
+            <span 
+              className="text-primary font-semibold hover:text-accent transition-colors cursor-pointer"
+              onClick={() => window.location.href = 'tel:+919861221105'}
+            >
+              ASK Solutions
+            </span>
+          </p>
+        </div>
       </div>
     </footer>
   );
