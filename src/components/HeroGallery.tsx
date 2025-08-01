@@ -68,26 +68,26 @@ const HeroGallery = () => {
   const selectedImageData = galleryImages.find(img => img.id === selectedImage);
 
   return (
-    <section className="py-20 section-modern bg-gradient-hero">
+    <section className="py-24 hero-modern">
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Our Professional <span className="text-accent-light">Gallery</span>
+        <div className="text-center mb-20">
+          <h2 className="font-heading text-5xl md:text-6xl font-bold text-white mb-8">
+            Our Exquisite <span className="text-accent-light">Portfolio</span>
           </h2>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-            Explore our premium safety net installations and discover the quality that makes us 
-            Hyderabad's most trusted safety solution provider
+          <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed font-body">
+            Discover our masterful safety net installations that blend uncompromising security 
+            with aesthetic excellence across Hyderabad's most prestigious properties
           </p>
-          <div className="w-24 h-1 bg-accent mx-auto mt-6 rounded-full"></div>
+          <div className="w-32 h-1 bg-gradient-accent mx-auto mt-8 rounded-full"></div>
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
           {galleryImages.map((image, index) => (
             <div
               key={image.id}
-              className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer card-hover floating-card"
-              style={{ animationDelay: `${index * 0.15}s` }}
+              className="group relative overflow-hidden rounded-3xl shadow-2xl hover:shadow-accent transition-all duration-700 cursor-pointer card-hover floating-card"
+              style={{ animationDelay: `${index * 0.2}s` }}
               onClick={() => openModal(image.id)}
             >
               <div className="aspect-[4/3] overflow-hidden">
@@ -97,12 +97,18 @@ const HeroGallery = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                  <h3 className="text-xl font-bold mb-2">{image.title}</h3>
-                  <p className="text-sm text-white/90 mb-3">Professional installation by G. Kiran Safety Nets</p>
-                  <div className="w-12 h-0.5 bg-accent rounded-full"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
+                <div className="absolute bottom-0 left-0 right-0 p-8 text-white transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                  <h3 className="font-heading text-2xl font-bold mb-3">{image.title}</h3>
+                  <p className="text-sm text-white/90 mb-4 font-body">Masterful installation by G. Kiran Safety Nets</p>
+                  <div className="w-16 h-1 bg-gradient-accent rounded-full"></div>
                 </div>
+              </div>
+              <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
               </div>
             </div>
           ))}
