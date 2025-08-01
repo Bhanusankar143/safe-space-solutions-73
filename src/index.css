@@ -325,3 +325,12 @@
   transform: scale(1.1);
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
 }
+
+@keyframes slideUpDown {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}

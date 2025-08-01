@@ -30,9 +30,10 @@ const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => void })
     <div className="fixed inset-0 bg-white z-50 flex items-center justify-center">
       <div className="text-center">
         <img 
-          src="/lovable-uploads/56945522-73a1-43ff-9574-df24370328b2.png" 
-          alt="Jaidev Safety Nets Logo" 
-          className="w-64 h-auto mx-auto animate-bounce"
+          src="/lovable-uploads/e4b4ae4c-bcb6-4bd6-9902-812ef421b989.png" 
+          alt="G. Kiran Safety Nets Logo" 
+          className="w-64 h-auto mx-auto animate-[translateY(0px)_1s_ease-in-out_infinite_alternate]"
+          style={{ animation: 'slideUpDown 2s ease-in-out infinite' }}
         />
         <div className="mt-8">
           <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-orange-500 mx-auto"></div>
