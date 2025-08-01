@@ -12,6 +12,7 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import FloatingButtons from '@/components/FloatingButtons';
 import LoadingScreen from '@/components/LoadingScreen';
+import Locations from '@/components/Locations';
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -34,6 +35,7 @@ const Index = () => {
       <Services />
       <Gallery />
       <WhyChooseUs />
+      <Locations />
       <Contact />
       <Footer />
       <FloatingButtons />

@@ -136,9 +136,13 @@ const HeroCarousel = () => {
                   <img 
                     src={service.image} 
                     alt={service.title}
-                    className="w-full h-full object-cover scale-110"
+                    className="w-full h-full object-cover scale-105 filter brightness-110 contrast-110 saturate-110"
+                    style={{ 
+                      imageRendering: 'crisp-edges',
+                      transform: 'translateZ(0)'
+                    }}
                   />
-                  <div className="absolute inset-0 bg-black/30"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-black/40"></div>
                 </div>
 
                 {/* Main Content - Positioned to the right */}
