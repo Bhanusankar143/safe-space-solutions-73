@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronLeft, ChevronRight, X } from 'lucide-react';
+import { ChevronLeft, ChevronRight, X, Phone, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const galleryImages = [
@@ -43,6 +43,16 @@ const galleryImages = [
 
 const HeroGallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
+
+  const handleCall = () => {
+    window.location.href = 'tel:+917606914368';
+  };
+
+  const handleWhatsApp = () => {
+    const message = "Hi! I'm interested in your safety net services. Could you please provide more information?";
+    const whatsappUrl = `https://wa.me/917606914368?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
 
   const openModal = (imageId: number) => {
     setSelectedImage(imageId);
@@ -101,7 +111,31 @@ const HeroGallery = () => {
                 <div className="absolute bottom-0 left-0 right-0 p-8 text-white transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
                   <h3 className="font-heading text-2xl font-bold mb-3">{image.title}</h3>
                   <p className="text-sm text-white/90 mb-4 font-body">Masterful installation by G. Kiran Safety Nets</p>
-                  <div className="w-16 h-1 bg-gradient-accent rounded-full"></div>
+                  <div className="w-16 h-1 bg-gradient-accent rounded-full mb-4"></div>
+                  
+                  {/* Contact Buttons */}
+                  <div className="flex gap-3">
+                    <Button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleCall();
+                      }}
+                      className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full flex items-center gap-2 text-sm"
+                    >
+                      <Phone className="h-4 w-4" />
+                      Call Now
+                    </Button>
+                    <Button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleWhatsApp();
+                      }}
+                      className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full flex items-center gap-2 text-sm"
+                    >
+                      <MessageCircle className="h-4 w-4" />
+                      WhatsApp
+                    </Button>
+                  </div>
                 </div>
               </div>
               <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
