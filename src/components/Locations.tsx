@@ -134,7 +134,7 @@ const Locations = () => {
 
         {/* ASK Solutions Footer */}
         <div className="text-center mt-20 pt-8 border-t border-border/30">
-          <p className="text-muted-foreground mb-4">
+          <div className="text-muted-foreground mb-4">
             All Rights Reserved. Designed by{' '}
             <span className="relative group cursor-pointer">
               <span 
@@ -165,7 +165,7 @@ const Locations = () => {
                 <div className="text-xs text-muted-foreground mt-2">+91 98612 21105</div>
               </div>
             </span>
-          </p>
+          </div>
         </div>
       </div>
     </section>
