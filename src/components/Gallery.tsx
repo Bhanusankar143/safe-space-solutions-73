@@ -122,19 +122,20 @@ const Gallery = () => {
                     alt={image.title}
                     className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="absolute bottom-4 left-4 right-4 text-white">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                    <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
                       <h3 className="font-semibold text-lg mb-1">{image.title}</h3>
                       <p className="text-sm text-white/90 mb-3">{image.description}</p>
                       
-                      {/* Contact Buttons */}
+                      {/* Contact Buttons - Always visible */}
                       <div className="flex gap-2">
                         <Button
                           onClick={(e) => {
                             e.stopPropagation();
                             handleCall();
                           }}
-                          className="bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded-full flex items-center gap-1 text-xs"
+                          size="sm"
+                          className="bg-red-500 hover:bg-red-600 text-white rounded-full flex items-center gap-1 text-xs px-3 py-1"
                         >
                           <Phone className="h-3 w-3" />
                           Call
@@ -144,7 +145,8 @@ const Gallery = () => {
                             e.stopPropagation();
                             handleWhatsApp();
                           }}
-                          className="bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-full flex items-center gap-1 text-xs"
+                          size="sm"
+                          className="bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center gap-1 text-xs px-3 py-1"
                         >
                           <MessageCircle className="h-3 w-3" />
                           WhatsApp

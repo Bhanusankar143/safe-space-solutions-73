@@ -107,32 +107,33 @@ const HeroGallery = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
-                <div className="absolute bottom-0 left-0 right-0 p-8 text-white transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
-                  <h3 className="font-heading text-2xl font-bold mb-3">{image.title}</h3>
-                  <p className="text-sm text-white/90 mb-4 font-body">Masterful installation by G. Kiran Safety Nets</p>
-                  <div className="w-16 h-1 bg-gradient-accent rounded-full mb-4"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <h3 className="font-heading text-xl font-bold mb-2">{image.title}</h3>
+                  <p className="text-sm text-white/90 mb-4 font-body">Professional installation by G. Kiran Safety Nets</p>
                   
-                  {/* Contact Buttons */}
-                  <div className="flex gap-3">
+                  {/* Contact Buttons - Always visible */}
+                  <div className="flex gap-2">
                     <Button
                       onClick={(e) => {
                         e.stopPropagation();
                         handleCall();
                       }}
-                      className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full flex items-center gap-2 text-sm"
+                      size="sm"
+                      className="bg-red-500 hover:bg-red-600 text-white rounded-full flex items-center gap-1 text-xs px-3 py-1"
                     >
-                      <Phone className="h-4 w-4" />
-                      Call Now
+                      <Phone className="h-3 w-3" />
+                      Call
                     </Button>
                     <Button
                       onClick={(e) => {
                         e.stopPropagation();
                         handleWhatsApp();
                       }}
-                      className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full flex items-center gap-2 text-sm"
+                      size="sm"
+                      className="bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center gap-1 text-xs px-3 py-1"
                     >
-                      <MessageCircle className="h-4 w-4" />
+                      <MessageCircle className="h-3 w-3" />
                       WhatsApp
                     </Button>
                   </div>
